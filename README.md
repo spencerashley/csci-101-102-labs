@@ -20,3 +20,21 @@ def find_word_count(list, word):
     count = count + occurences
   print(count)
 
+def score_finder(names,scores,target_name):
+  count = 0
+  location = 'x'
+  target_name.lower()
+  for i in names:
+    n = i.lower()
+    if n == target_name:
+      location = count
+    count += 1
+  if str(location) in '012345689':
+    print(f'OUTPUT {players[location]} got a score of {scores[location]}')
+  else:
+    print('OUTPUT player not found')
+   
+def union(list1,list2):
+  for i in list2:
+    list1.append(i)
+  print(list1)
